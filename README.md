@@ -5,11 +5,6 @@ This repository includes 2 smart contracts:
 - SKY token
 - MkrSky Converter
 
-### SKY token
-
-This is a standard erc20 implementation with regular `permit` functionality + EIP-1271 smart contract signature validation.
-In principle `PauseProxy` and `MkrSky` would be the only two contracts set as `wards(address)`.
-
 ### MkrSky
 
 It is a converter between `Mkr` and `Sky` (both ways). Using the `mint` and `burn` capabilities of both tokens it is possible to exchange one to the other. The exchange rate is 1:`rate` (value defined as `immutable`).
